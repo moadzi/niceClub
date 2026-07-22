@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: football-api
+  datasource:
+    url: jdbc:postgresql://localhost:15432/ogcnice
+    username: nice
+    password: nice
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    change-log: classpath:db/db.changelog-master.yaml
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.ogcnice.football: INFO

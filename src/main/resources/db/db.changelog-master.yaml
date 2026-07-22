@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: db/releases/v1.0/db.changelog-v1.0.yaml
+      relativeToChangelogFile: false

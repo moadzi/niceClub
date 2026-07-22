@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.0-init-db
+      author: ogcnice
+      changes:
+        - sqlFile:
+            path: init-db.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true

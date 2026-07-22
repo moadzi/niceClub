@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: ogcnice-postgres
+    environment:
+      POSTGRES_DB: ogcnice
+      POSTGRES_USER: nice
+      POSTGRES_PASSWORD: nice
+    # Host port 15432 -> container port 5432. application.yml connects to 15432,
+    # which also avoids clashing with any local PostgreSQL already on 5432.
+    ports:
+      - "15432:5432"

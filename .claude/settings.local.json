@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/moadz/.m2/repository/org/springframework/boot/spring-boot-starter-test/**)",
+      "Bash(xargs cat)",
+      "Bash(pkill -f \"spring-boot:run\")",
+      "Bash(pkill -f \"FootballApplication\")",
+      "Bash(lsof -nP -iTCP:8080 -sTCP:LISTEN)",
+      "Bash(docker compose *)"
+    ]
+  }
+}
